@@ -1,34 +1,7 @@
-Berikut versi README yang lebih “showcase/open-source friendly”, ada:
-
-* hero screenshot
-* live demo button
-* preview gallery
-* badge
-* clean GitHub style
-* section showcase visual
-* lebih convincing buat recruiter/user GitHub
-
-Tinggal nanti kamu taruh screenshot di:
-
-```txt
-/public/screenshots/
-```
-
-Misal:
-
-```txt
-/public/screenshots/home.png
-/public/screenshots/gallery.png
-/public/screenshots/prompt-detail.png
-/public/screenshots/admin.png
-```
-
-Lalu deploy demo di Vercel.
-
 # MintPrompt 🌿
 
 <p align="center">
-  <img src="./public/screenshots/home.png" width="100%" alt="MintPrompt Preview"/>
+  <img src="./public/screenshots/prompts.png" width="100%" alt="MintPrompt Preview"/>
 </p>
 
 <p align="center">
