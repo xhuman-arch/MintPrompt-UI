@@ -1,146 +1,260 @@
+Berikut versi README yang lebih “showcase/open-source friendly”, ada:
+
+* hero screenshot
+* live demo button
+* preview gallery
+* badge
+* clean GitHub style
+* section showcase visual
+* lebih convincing buat recruiter/user GitHub
+
+Tinggal nanti kamu taruh screenshot di:
+
+```txt
+/public/screenshots/
+```
+
+Misal:
+
+```txt
+/public/screenshots/home.png
+/public/screenshots/gallery.png
+/public/screenshots/prompt-detail.png
+/public/screenshots/admin.png
+```
+
+Lalu deploy demo di Vercel.
+
 # MintPrompt 🌿
 
-**AI Aesthetic Prompt Discovery Platform**
+<p align="center">
+  <img src="./public/screenshots/home.png" width="100%" alt="MintPrompt Preview"/>
+</p>
 
-Browse and copy curated AI image prompts for ChatGPT, Gemini, Grok, Midjourney & Flux. Discover aesthetic visuals and shop inspired looks.
+<p align="center">
+  <strong>AI Aesthetic Prompt Discovery Platform</strong>
+</p>
 
-> ⚠️ **This is a public showcase / demo version.** All backend functionality uses local mock data. No Supabase connection or real credentials are required to run locally.
-
----
-
-## Features
-
-- 🖼️ Prompt gallery with infinite scroll
-- 🔍 Filter by AI model and category
-- 📋 One-click prompt copy
-- 🔗 Affiliate product showcase
-- 🌙 Dark aesthetic UI
-- 📱 Fully responsive
-- 🔒 Admin dashboard (demo mode — read-only mock data)
+<p align="center">
+  Browse curated AI image prompts for ChatGPT, Gemini, Grok, Midjourney & Flux.
+  <br/>
+  Discover aesthetic visuals, copy prompts instantly, and explore inspired products.
+</p>
 
 ---
 
-## Getting Started
+<p align="center">
 
-### Prerequisites
+  <a href="https://your-demo.vercel.app">
+    <img src="https://img.shields.io/badge/Live_Demo-000?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a>
 
-- Node.js 18+ 
-- npm or yarn
+  <a href="https://github.com/your-username/mintprompt">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
 
-### Installation
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=nextdotjs"/>
+  <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+
+</p>
+
+---
+
+## ✨ Overview
+
+MintPrompt is a modern AI prompt discovery platform focused on aesthetic and Gen Z-style visual inspiration.
+
+Users can:
+
+* Browse curated AI prompts
+* Filter by AI model and category
+* Copy prompts instantly
+* Explore visual inspiration
+* Discover affiliate-style product recommendations
+
+This repository is a **public showcase/demo version** prepared for GitHub sharing.
+
+> ⚠️ All backend functionality has been replaced with local mock/demo data.
+> No real Supabase credentials or production secrets are included.
+
+---
+
+# 🖼️ Screenshots
+
+## Home Feed
+
+<img src="./public/screenshots/home.png" width="100%" />
+
+---
+
+## Prompt Gallery
+
+<img src="./public/screenshots/gallery.png" width="100%" />
+
+---
+
+## Prompt Detail
+
+<img src="./public/screenshots/prompt-detail.png" width="100%" />
+
+---
+
+## Admin Dashboard (Demo)
+
+<img src="./public/screenshots/admin.png" width="100%" />
+
+---
+
+# 🚀 Live Demo
+
+### 🌐 Demo Website
+
+👉 [https://your-demo.vercel.app](https://your-demo.vercel.app)
+
+---
+
+# ✨ Features
+
+* 🖼️ AI prompt gallery
+* 🔍 Category & model filters
+* 📋 One-click copy prompt
+* 🔗 Affiliate showcase cards
+* 🌙 Dark aesthetic UI
+* 📱 Fully responsive layout
+* ⚡ Infinite scrolling
+* 🎨 Gen Z visual style
+* 🔒 Demo admin dashboard
+* 🧪 Local mock API system
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology   | Usage                                     |
+| ------------ | ----------------------------------------- |
+| Next.js 15   | App Router Framework                      |
+| TypeScript   | Type-safe frontend                        |
+| Tailwind CSS | Styling                                   |
+| Supabase     | Production backend (removed in demo mode) |
+| Vercel       | Deployment                                |
+
+---
+
+# 📦 Installation
+
+## 1. Clone Repository
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/your-username/mintprompt.git
 cd mintprompt
+```
 
-# 2. Install dependencies
+## 2. Install Dependencies
+
+```bash
 npm install
+```
 
-# 3. Create environment file (optional — not required for demo mode)
+## 3. Create Environment File
+
+```bash
 cp .env.example .env.local
+```
 
-# 4. Start the development server
+## 4. Start Development Server
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open:
 
----
-
-## Demo Mode
-
-This showcase version runs entirely on **local mock data** — no Supabase account needed.
-
-| Feature | Demo Mode | Production Mode |
-|---|---|---|
-| Prompt gallery | ✅ Mock data | ✅ Live Supabase |
-| Category filters | ✅ Mock data | ✅ Live Supabase |
-| Prompt detail panel | ✅ Mock data | ✅ Live Supabase |
-| Copy prompts | ✅ Clipboard | ✅ Clipboard |
-| Admin dashboard | ✅ Read-only demo | ✅ Full CRUD |
-| Analytics tracking | ❌ No-op | ✅ Supabase DB |
-| Image uploads | ❌ Disabled | ✅ Supabase Storage |
-| Authentication | ❌ Bypassed | ✅ Supabase Auth |
-
----
-
-## Connecting a Real Supabase Project
-
-To enable full functionality:
-
-1. Create a project at [supabase.com](https://supabase.com)
-2. Run the schema from `supabase/schema.sql` in the SQL editor
-3. Apply migrations from `supabase/migrations/`
-4. Fill in `.env.local` with your project credentials from `.env.example`
-5. The app will automatically switch from mock data to live data
-
----
-
-## Project Structure
-
+```txt
+http://localhost:3000
 ```
+
+---
+
+# 🧪 Demo Mode
+
+This showcase version runs entirely on local mock data.
+
+| Feature            | Demo Mode   | Production  |
+| ------------------ | ----------- | ----------- |
+| Prompt Gallery     | ✅           | ✅           |
+| Filters            | ✅           | ✅           |
+| Prompt Detail      | ✅           | ✅           |
+| Copy Prompt        | ✅           | ✅           |
+| Admin Dashboard    | ✅ Read-only | ✅ Full CRUD |
+| Authentication     | ❌ Disabled  | ✅           |
+| Analytics          | ❌ Mocked    | ✅           |
+| Image Upload       | ❌ Disabled  | ✅           |
+| Affiliate Tracking | ❌ Mocked    | ✅           |
+
+---
+
+# 📁 Project Structure
+
+```txt
 src/
-├── app/               # Next.js App Router pages
-│   ├── admin/         # Admin dashboard (demo: read-only)
-│   ├── api/           # API routes (demo: mock responses)
-│   └── prompt/        # Prompt detail pages
-├── components/        # UI components
-│   ├── gallery/       # Gallery grid, filter bar, prompt cards
-│   ├── layout/        # Navbar, hero, footer
-│   └── prompt/        # Prompt detail panel
-├── hooks/             # React hooks (usePrompts, useCategories)
-├── lib/               # Utilities and API clients
-│   ├── api/           # Data fetching (demo: reads from /mock)
-│   └── supabase/      # Supabase client stubs (demo mode)
-└── types/             # TypeScript types
+├── app/
+│   ├── admin/
+│   ├── api/
+│   └── prompt/
+├── components/
+├── hooks/
+├── lib/
+├── types/
 mock/
-├── prompts.ts         # 12 demo prompts with full data
-└── categories.ts      # 8 demo categories
 supabase/
-├── schema.sql         # Full database schema
-└── migrations/        # Schema migrations
 ```
 
 ---
 
-## Tech Stack
+# 🔒 Public Showcase Changes
 
-- [Next.js 15](https://nextjs.org) (App Router)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Supabase](https://supabase.com) (production mode)
+This repository was sanitized for safe public GitHub sharing.
 
----
+## Removed
 
-## What Was Changed for the Public Showcase
+* Production Supabase credentials
+* Service role keys
+* Real authentication
+* Payment systems
+* Analytics tracking
+* Storage uploads
+* Backend write operations
+* Affiliate tracking backend
 
-The following changes were made to make this safe for open-source sharing:
+## Replaced With
 
-**Removed:**
-- All real Supabase credentials and service role keys
-- Production database write operations
-- Real authentication / admin guard
-- Analytics event tracking (replaced with no-ops)
-- Storage upload functionality
-
-**Replaced with:**
-- `mock/prompts.ts` — 12 realistic demo prompts
-- `mock/categories.ts` — 8 demo categories
-- Mock API layer in `src/lib/api/*.ts` — reads from local mock files
-- Demo middleware — bypasses auth checks
-- No-op analytics — tracking functions exist but do nothing
-- Demo admin login — enter the dashboard without credentials
-
-**Preserved:**
-- All UI components, layouts, and styling
-- Gallery, filter, search, and infinite scroll functionality
-- Prompt detail panel with tabs and copy buttons
-- Admin dashboard UI (read-only with mock data)
-- Full TypeScript types and project structure
+* Local mock data
+* Demo APIs
+* Read-only admin dashboard
+* No-op analytics
+* Demo middleware
+* Placeholder affiliate system
 
 ---
 
-## License
+# 🌱 Future Plans
 
-MIT
+* AI-generated collections
+* Community prompt uploads
+* Saved favorites
+* Visual search
+* Multi-model comparison
+* Public creator profiles
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+<p align="center">
+  Built with ☕ + aesthetic obsession.
+</p>
