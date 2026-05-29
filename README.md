@@ -1,4 +1,4 @@
-# MintPrompt 🌿
+# NallyPrompt 🌿
 
 <p align="center">
   <img src="./public/screenshots/prompts.png" width="100%" alt="MintPrompt Preview"/>
@@ -13,6 +13,13 @@
   <br/>
   Discover aesthetic visuals, copy prompts instantly, and explore inspired products.
 </p>
+
+---
+# 🚀 Live Demo
+
+### 🌐 Demo Website
+
+👉 [https://nallyprompt.vercel.app](https://nallyprompt.vercel.app)
 
 ---
 
@@ -50,13 +57,6 @@ This repository is a **public showcase/demo version** prepared for GitHub sharin
 
 > ⚠️ All backend functionality has been replaced with local mock/demo data.
 > No real Supabase credentials or production secrets are included.
-
----
-# 🚀 Live Demo
-
-### 🌐 Demo Website
-
-👉 [https://your-demo.vercel.app](https://nallyprompt.vercel.app)
 
 ---
 
