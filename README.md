@@ -52,38 +52,11 @@ This repository is a **public showcase/demo version** prepared for GitHub sharin
 > No real Supabase credentials or production secrets are included.
 
 ---
-
-# 🖼️ Screenshots
-
-## Home Feed
-
-<img src="./public/screenshots/home.png" width="100%" />
-
----
-
-## Prompt Gallery
-
-<img src="./public/screenshots/gallery.png" width="100%" />
-
----
-
-## Prompt Detail
-
-<img src="./public/screenshots/prompt-detail.png" width="100%" />
-
----
-
-## Admin Dashboard (Demo)
-
-<img src="./public/screenshots/admin.png" width="100%" />
-
----
-
 # 🚀 Live Demo
 
 ### 🌐 Demo Website
 
-👉 [https://your-demo.vercel.app](https://your-demo.vercel.app)
+👉 [https://your-demo.vercel.app](https://nallyprompt.vercel.app)
 
 ---
 
